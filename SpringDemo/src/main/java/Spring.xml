@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   <bean id="alien" class="com.telusko.SpringDemo.Alien" autowire="byType" >
+<!--    <constructor-arg value="12"></constructor-arg> -->
+   <property name="age" value="10"></property>
+<!--    <property name="com" ref="Desktop"></property> -->
+   </bean>
+   <bean id="com" class="com.telusko.SpringDemo.Laptop" primary="true"></bean>
+  
+   <bean id="Desktop" class="com.telusko.SpringDemo.Desktop"></bean>
+   </beans>
